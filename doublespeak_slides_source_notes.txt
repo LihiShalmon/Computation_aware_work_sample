@@ -1,0 +1,5 @@
+Content source: local experiment outputs in model_comparison.csv and model_comparison.md.
+Verified design: 10 attack examples and 10 matched clean controls per model.
+Verified results: all three models had 100% target adoption, 100% auditor sensitivity,
+100% mapping recovery, 0 false positives, and 0 blind spots.
+No external images or research claims are used in this deck.
