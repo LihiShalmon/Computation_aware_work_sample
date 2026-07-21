@@ -4,6 +4,7 @@ __pycache__/
 .env.*
 ~$*.pptx
 *.inspect.ndjson
+doublespeak_experiment_slides.pptx
 
 # Intermediate outputs from single-model runs inside compare_models.py
 results.csv

@@ -35,4 +35,3 @@ Do not commit an API key. The scripts read it only from `OPENAI_API_KEY`.
 - `model_comparison_results.csv`: combined example-level results.
 - `model_comparison_summary.csv`: model-level metrics.
 - `model_comparison.md`: concise comparison report.
-- `doublespeak_experiment_slides.pptx`: three-slide experiment overview.
