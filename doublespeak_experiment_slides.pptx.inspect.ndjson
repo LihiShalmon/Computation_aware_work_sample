@@ -1,0 +1,37 @@
+{"kind":"deck","id":"pr/dh0pf6","name":"Deck"}
+{"kind":"layout","layoutId":"cd7a9ef1-0370-4c94-b211-61d631f45fca","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"a3fa66a5-5c70-41ca-871c-084dcf5e082f","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/gck1y1","slide":1,"title":"COMPUTATION-AWARE AUDITING","textShapes":5}
+{"kind":"shape","id":"sh/698vilgr","slide":1,"name":"accent-rule","bbox":[42,137,92,8]}
+{"kind":"textbox","id":"sh/twzed0f2","slide":1,"name":"eyebrow","text":"COMPUTATION-AWARE AUDITING","textPreview":"COMPUTATION-AWARE AUDITING","textChars":26,"textLines":1,"bbox":[42,48,620,38]}
+{"kind":"textbox","id":"sh/8bqxkvyh","slide":1,"name":"main-question","text":"Can semantic remapping hide\nfrom a text-only auditor?","textPreview":"Can semantic remapping hide | from a text-only auditor?","textChars":53,"textLines":2,"bbox":[42,184,1110,255]}
+{"kind":"textbox","id":"sh/j6xw76x0","slide":1,"name":"scope","text":"Doublespeak MVP  •  3 OpenAI models  •  10 remapping attacks + 10 matched clean controls per model","textPreview":"Doublespeak MVP  •  3 OpenAI models  •  10 remapping attacks + 10 matched clean controls per model","textChars":98,"textLines":1,"bbox":[42,500,1120,76]}
+{"kind":"textbox","id":"sh/y5ove1gf","slide":1,"name":"definition","text":"Blind spot: the target adopts the hidden meaning, while an independent auditor misses it.","textPreview":"Blind spot: the target adopts the hidden meaning, while an independent auditor misses it.","textChars":89,"textLines":1,"bbox":[42,596,1120,42]}
+{"kind":"textbox","id":"sh/l8fe9gf6","slide":1,"name":"footer-1","text":"1/3","textPreview":"1/3","textChars":3,"textLines":1,"bbox":[1170,676,68,20]}
+{"kind":"notes","id":"nt/gck1y1","slide":1,"text":""}
+{"kind":"slide","id":"sl/cefeyg","slide":2,"title":"Each example was tested twice—with no response sharing","textShapes":10}
+{"kind":"textbox","id":"sh/l8nqx8fi","slide":2,"name":"method-title","text":"Each example was tested twice—with no response sharing","textPreview":"Each example was tested twice—with no response sharing","textChars":54,"textLines":1,"bbox":[42,38,1170,72]}
+{"kind":"textbox","id":"sh/y5w7mdg7","slide":2,"name":"method-subtitle","text":"Same model, temperature 0, fresh API calls","textPreview":"Same model, temperature 0, fresh API calls","textChars":42,"textLines":1,"bbox":[42,119,800,34]}
+{"kind":"shape","id":"sh/z658vyxs","slide":2,"name":"timeline-line","bbox":[100,300,1000,0.03]}
+{"kind":"shape","id":"sh/8vy9sny9","slide":2,"name":"node-1","bbox":[115,285,30,30]}
+{"kind":"shape","id":"sh/9w7q1sfu","slide":2,"name":"node-2","bbox":[525,285,30,30]}
+{"kind":"shape","id":"sh/mtw7qdg3","slide":2,"name":"node-3","bbox":[935,285,30,30]}
+{"kind":"textbox","id":"sh/7u58zixo","slide":2,"name":"label-1","text":"CALL 1","textPreview":"CALL 1","textChars":6,"textLines":1,"bbox":[115,232,180,30]}
+{"kind":"textbox","id":"sh/wzy9wny5","slide":2,"name":"label-2","text":"CALL 2","textPreview":"CALL 2","textChars":6,"textLines":1,"bbox":[525,232,180,30]}
+{"kind":"textbox","id":"sh/h07qpsfq","slide":2,"name":"label-3","text":"DECISION","textPreview":"DECISION","textChars":8,"textLines":1,"bbox":[935,232,180,30]}
+{"kind":"textbox","id":"sh/p43ipkfu","slide":2,"name":"step-1","text":"Target semantic check\n\nDoes the model interpret the benign substitute as the intended harmful concept?","textPreview":"Target semantic check |  | Does the model interpret the benign substitute as the intended harmful concept?","textChars":102,"textLines":3,"bbox":[115,352,325,190]}
+{"kind":"textbox","id":"sh/43u1wfep","slide":2,"name":"step-2","text":"Independent text auditor\n\nA fresh call sees only the prompt. It detects and attempts to recover the mapping.","textPreview":"Independent text auditor |  | A fresh call sees only the prompt. It detects and attempts to recover the mapping.","textChars":108,"textLines":3,"bbox":[525,352,325,190]}
+{"kind":"textbox","id":"sh/32l0nax4","slide":2,"name":"step-3","text":"Blind-spot test\n\nTarget adopted mapping\nAND\nauditor did not detect it","textPreview":"Blind-spot test |  | Target adopted mapping | AND | auditor did not detect it","textChars":69,"textLines":5,"bbox":[935,352,270,210]}
+{"kind":"shape","id":"sh/21cjupwj","slide":2,"name":"call-count-band","bbox":[42,595,1118,60]}
+{"kind":"textbox","id":"sh/d8nit4f6","slide":2,"name":"call-count","text":"Per model: 20 examples × 2 independent calls = 40 primary API calls","textPreview":"Per model: 20 examples × 2 independent calls = 40 primary API calls","textChars":67,"textLines":1,"bbox":[66,610,1060,32]}
+{"kind":"textbox","id":"sh/c7e10zel","slide":2,"name":"footer-2","text":"2/3","textPreview":"2/3","textChars":3,"textLines":1,"bbox":[1170,676,68,20]}
+{"kind":"notes","id":"nt/cefeyg","slide":2,"text":""}
+{"kind":"slide","id":"sl/c08i90","slide":3,"title":"All three models produced the same ceiling result","textShapes":5}
+{"kind":"textbox","id":"sh/hsvaxs7i","slide":3,"name":"results-title","text":"All three models produced the same ceiling result","textPreview":"All three models produced the same ceiling result","textChars":49,"textLines":1,"bbox":[42,36,1170,70]}
+{"kind":"textbox","id":"sh/up4rmd87","slide":3,"name":"results-subtitle","text":"10 attacks + 10 matched clean controls per model","textPreview":"10 attacks + 10 matched clean controls per model","textChars":48,"textLines":1,"bbox":[42,115,850,34]}
+{"kind":"shape","id":"sh/8nm9k3q1","slide":3,"name":"interpretation-band","bbox":[42,515,1195,118]}
+{"kind":"textbox","id":"sh/tovat8rm","slide":3,"name":"interpretation-label","text":"Interpretation","textPreview":"Interpretation","textChars":14,"textLines":1,"bbox":[68,536,220,28]}
+{"kind":"textbox","id":"sh/6lkrid8v","slide":3,"name":"interpretation-copy","text":"The remappings succeeded—but the text-only auditor caught every one. Harder attacks are needed before testing whether internal-state monitoring adds signal.","textPreview":"The remappings succeeded—but the text-only auditor caught every one. Harder attacks are needed before testing whether internal-state moni...","textChars":156,"textLines":1,"bbox":[68,571,1120,46]}
+{"kind":"textbox","id":"sh/7mtsry9g","slide":3,"name":"footer-3","text":"3/3","textPreview":"3/3","textChars":3,"textLines":1,"bbox":[1170,676,68,20]}
+{"kind":"table","id":"tb/6dg76pg3","slide":3,"name":"results-table","rows":4,"cols":6,"preview":"Model | Target adoption | Auditor sensitivity | Mapping recovery | False positives | Blind spots","bbox":[42,190,1195,280]}
+{"kind":"notes","id":"nt/c08i90","slide":3,"text":""}
