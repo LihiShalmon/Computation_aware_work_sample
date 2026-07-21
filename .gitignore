@@ -1,1 +1,12 @@
 __pycache__/
+*.py[cod]
+.env
+.env.*
+~$*.pptx
+*.inspect.ndjson
+
+# Intermediate outputs from single-model runs inside compare_models.py
+results.csv
+results_gpt-*.csv
+summary.md
+summary_gpt-*.md

@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import os
-import re
 import subprocess
 import sys
 from pathlib import Path
@@ -18,10 +17,6 @@ MODELS = [
     ).split(",")
     if model.strip()
 ]
-
-
-def slug(model: str) -> str:
-    return re.sub(r"[^a-zA-Z0-9._-]+", "_", model)
 
 
 def metrics(frame: pd.DataFrame) -> dict[str, object]:
@@ -87,8 +82,6 @@ def main() -> None:
 
         frame = pd.read_csv("results.csv")
         frame.insert(0, "model", model)
-        frame.to_csv(f"results_{slug(model)}.csv", index=False)
-        Path("summary.md").replace(f"summary_{slug(model)}.md")
         combined.append(frame)
         print(f"{model}: completed")
 
@@ -118,6 +111,10 @@ treated as exploratory.
             f"- {failure}" for failure in failures
         )
     Path("model_comparison.md").write_text(report, encoding="utf-8")
+
+    # These are single-run intermediates; the combined outputs above supersede them.
+    Path("results.csv").unlink(missing_ok=True)
+    Path("summary.md").unlink(missing_ok=True)
 
     print("\n" + markdown_table(summary))
     if failures:
